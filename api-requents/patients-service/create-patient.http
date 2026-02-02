@@ -1,12 +1,12 @@
-### GET request to example server
+### creates a new patient entity
 POST http://localhost:4000/patients
 Content-Type: application/json
 
 
 {
-  "name": "Vijaya",
-  "email": "vijay115@gmail.com",
-  "address": "aditi enclave",
+  "name": "john doe",
+  "email": "johndoe@gmail.com",
+  "address": "aditi enclave 501",
   "dateOfBirth": "2001-11-03",
   "registeredDate": "2026-01-31"
 }

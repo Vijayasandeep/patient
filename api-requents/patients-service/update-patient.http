@@ -1,0 +1,14 @@
+### updates an existing patient entity
+PUT http://localhost:4000/patients/e0a517a5-481b-4df0-b4a4-5d736d919f48
+Content-Type: application/json
+
+
+{
+  "name": "Vijaya sandeep",
+  "address": "aditi enclave",
+  "dateOfBirth": "2001-11-03",
+  "registeredDate": "2026-01-31",
+  "email": "vijay115@gmail.com"
+}
+
+###

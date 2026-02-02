@@ -10,12 +10,13 @@ import static org.springframework.security.config.Customizer.withDefaults;
 @Configuration
 class SecurityConfig {
     @Bean
-    SecurityFilterChain configure(HttpSecurity http) throws Exception {
-        http.csrf(csrf -> csrf.ignoringRequestMatchers("/h2-console"))
+    SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+        http
+                .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(auth -> auth
-                        .anyRequest().authenticated())
-                .formLogin(withDefaults());
-
+                        .anyRequest().permitAll()
+                );
         return http.build();
     }
+
 }

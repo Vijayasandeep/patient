@@ -1,5 +1,5 @@
 ### updates an existing patient entity
-PUT http://localhost:4000/patients/e0a517a5-481b-4df0-b4a4-5d736d919f48
+PUT http://localhost:8080/patients/e0a517a5-481b-4df0-b4a4-5d736d919f48
 Content-Type: application/json
 
 

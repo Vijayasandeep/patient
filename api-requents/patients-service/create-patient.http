@@ -1,11 +1,11 @@
 ### creates a new patient entity
-POST http://localhost:8080/patients
+POST http://localhost:18080/patients
 Content-Type: application/json
 
 
 {
-  "name": "john doe",
-  "email": "johndoe@gmail.com",
+  "name": "john doe with billing",
+  "email": "johndoe_billing_@gmail.com",
   "address": "aditi enclave 501",
   "dateOfBirth": "2001-11-03",
   "registeredDate": "2026-01-31"
